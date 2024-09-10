@@ -1,5 +1,5 @@
-function contains(string) { 
-    if (string===" ") {
+export function contains(string, searchCharacter = " ") { 
+    if (string===searchCharacter) {
     return true;
     } else {
         return false
@@ -7,3 +7,4 @@ function contains(string) {
 }
 
 console.log(contains(" "));
+console.log(contains("Ciao"))
