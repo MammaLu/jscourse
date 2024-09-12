@@ -1,6 +1,9 @@
 export function contains(string, searchCharacter = " ") { 
-    if (string===searchCharacter) {
-    return true;
+    if (typeof searchCharacter === 'function') {
+        for (let i = 0; i < string.length; i++) {
+            if(searchCharacter(string[i])) 
+                return true;
+        }
     } else {
         return false
     }
