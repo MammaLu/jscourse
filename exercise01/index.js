@@ -11,3 +11,4 @@ export function contains(string, searchCharacter = " ") {
 
 console.log(contains(" "));
 console.log(contains("Ciao"))
+console.log(contains("Hello World", " "));
